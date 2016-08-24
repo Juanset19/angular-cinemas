@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app id="angular-cinema-app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Hola Mundo, AngularJS - JuanSet</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+	&#191;Qu&eacute; pel&iacute;cula buscas?
+	<input type="text" ng-model="searchMovie" />
+	<h1 ng-show="searchMovie">Hola <span ng-bind="searchmovie"></span></h1>
+    <h3 ng-show="searchMovie">May&uacute;scula: <span ng-bind="searchMovie | uppercase"></span></h1>
+    <h3 ng-show="searchMovie">Min&uacute;scula: <span ng-bind="searchMovie | lowercase"></span></h1>
+</body>
+<script type="text/javascript" src="scripts/vendor/angular-1.5.8.min.js"></script>
+</html>
